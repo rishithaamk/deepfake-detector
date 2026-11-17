@@ -7,6 +7,11 @@ python_version: "3.11"
 ---
 
 # Real-Time Facial Deepfake Artifact Detector & Blinking Analyzer# Real-Time Facial Deepfake Artifact Detector & Blinking Analyzer
+## Live Demo
+
+[Open the app on Hugging Face Spaces](https://huggingface.co/spaces/rishithamk14/deepfake-detector)
+
+[![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/rishithamk14/deepfake-detector)
 
 **Concepts (Unit IV):** Facial landmarks · Frequency-artifact analysis · Biometrics  
 **Stack:** MediaPipe FaceMesh, OpenCV, NumPy FFT, scikit-learn, Gradio (Dlib is an optional alternative landmark detector; MediaPipe is used here because it is faster and needs no model download).
