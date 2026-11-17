@@ -8,9 +8,23 @@ import numpy as np
 from matplotlib.figure import Figure
 import spaces
 
-@spaces.GPU
+import gradio as gr
+import numpy as np
+...
+from src.face import FaceTracker
+
+try:
+    import spaces
+    gpu = spaces.GPU
+except Exception:
+    def gpu(f): return f
+
+@gpu
 def _gpu_marker():
     return True
+
+LIVE_TRACKER = FaceTracker(static=False)
+...
 
 from src.face import FaceTracker, mean_ear, crop_face, LEFT_EYE, RIGHT_EYE
 from src.features import analyze_video, vec_to_dict
