@@ -8,6 +8,7 @@ python_version: "3.11"
 
 # Real-Time Facial Deepfake Artifact Detector & Blinking Analyzer# Real-Time Facial Deepfake Artifact Detector & Blinking Analyzer
 ## Live Demo
+## Live Demo
 
 [Open the app on Hugging Face Spaces](https://huggingface.co/spaces/rishithamk14/deepfake-detector)
 
