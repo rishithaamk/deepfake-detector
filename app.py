@@ -6,6 +6,11 @@ import gradio as gr
 import joblib
 import numpy as np
 from matplotlib.figure import Figure
+import spaces
+
+@spaces.GPU
+def _gpu_marker():
+    return True
 
 from src.face import FaceTracker, mean_ear, crop_face, LEFT_EYE, RIGHT_EYE
 from src.features import analyze_video, vec_to_dict
